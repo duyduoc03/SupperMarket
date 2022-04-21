@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JP2.SuperMarket.SanPhamController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="591.0" prefWidth="800.0">
+         <children>
+            <TableView fx:id="tbSanPham" layoutX="47.0" layoutY="103.0" prefHeight="411.0" prefWidth="706.0">
+              <columns>
+                <TableColumn fx:id="pMSP" prefWidth="59.0" text="Mã SP" />
+                <TableColumn fx:id="pTensp" prefWidth="124.0" text="Tên sản phẩm" />
+                  <TableColumn fx:id="pMota" prefWidth="227.0" text="Mô tả" />
+                  <TableColumn fx:id="pTonkho" prefWidth="68.0" text="Tồn kho" />
+                  <TableColumn fx:id="pPrice" prefWidth="116.0" text="Giá" />
+                  <TableColumn fx:id="pEdit" prefWidth="55.0" text="Sửa" />
+                  <TableColumn fx:id="pDelete" minWidth="0.0" prefWidth="56.0" text="Xoá" />
+              </columns>
+            </TableView>
+            <Button layoutX="47.0" layoutY="30.0" mnemonicParsing="false" onAction="#backHome" text="&lt;&lt; Trở Về" />
+            <Button layoutX="676.0" layoutY="30.0" mnemonicParsing="false" onAction="#addSP" text="Thêm sp" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

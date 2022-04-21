@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JP2.SuperMarket.SanPhamForm">
+   <children>
+      <Text layoutX="215.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thêm sản phẩm" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="pTensp" layoutX="45.0" layoutY="87.0" prefHeight="25.0" prefWidth="246.0" promptText="Tên sản phẩm" />
+      <TextField fx:id="pPrice" layoutX="311.0" layoutY="147.0" prefHeight="25.0" prefWidth="246.0" promptText="Giá sản phẩm" />
+      <TextField fx:id="pTonkho" layoutX="45.0" layoutY="147.0" prefHeight="25.0" prefWidth="246.0" promptText="Tồn kho" />
+      <TextField fx:id="pMota" layoutX="311.0" layoutY="87.0" prefHeight="25.0" prefWidth="246.0" promptText="Mô tả" />
+      <Button layoutX="88.0" layoutY="262.0" mnemonicParsing="false" onAction="#backSanPham" text="&lt;&lt; Trở Về" />
+      <Button layoutX="434.0" layoutY="262.0" mnemonicParsing="false" onAction="#submit1" text="Submit" />
+   </children>
+</Pane>

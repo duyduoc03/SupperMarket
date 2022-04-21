@@ -15,7 +15,9 @@ public class HomeController {
         Main.rootStage.setScene(new Scene(root,800,600));
     }
 
-    public void sanphamModule(ActionEvent event) {
+    public void sanphamModule(ActionEvent event) throws Exception{
+        Parent root = FXMLLoader.load(getClass().getResource("SanPham.fxml"));
+        Main.rootStage.setScene(new Scene(root,800,600));
     }
 
     public void qlhdModule(ActionEvent event) {
