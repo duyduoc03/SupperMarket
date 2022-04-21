@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JP2.SuperMarket.NhanVienController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="550.0" prefWidth="765.0">
+         <children>
+            <TableView fx:id="tbNhanVien" layoutX="51.0" layoutY="74.0" prefHeight="453.0" prefWidth="664.0">
+              <columns>
+                <TableColumn fx:id="sMaNV" prefWidth="75.0" text="Mã NV" />
+                <TableColumn fx:id="sHoTen" prefWidth="126.0" text="Họ Tên" />
+                  <TableColumn fx:id="sSDT" prefWidth="148.0" text="Số Điện Thoại" />
+                  <TableColumn fx:id="sDiaChi" prefWidth="133.0" text="Địa Chỉ" />
+                  <TableColumn fx:id="sSua" prefWidth="88.0" text="Sửa" />
+                  <TableColumn fx:id="sXoa" prefWidth="93.0" text="Xoá" />
+              </columns>
+            </TableView>
+            <Button layoutX="51.0" layoutY="29.0" mnemonicParsing="false" onAction="#backHome" prefHeight="31.0" prefWidth="105.0" text="&lt;&lt; Trở Về " />
+            <Button layoutX="622.0" layoutY="29.0" mnemonicParsing="false" onAction="#addNhanVien" prefHeight="31.0" prefWidth="93.0" text="Thêm " />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JP2.SuperMarket.KhachHangController">
+   <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="509.0" prefWidth="604.0">
+         <children>
+            <TableView fx:id="tbKhachHang" layoutX="16.0" layoutY="125.0" prefHeight="228.0" prefWidth="573.0">
+               <columns>
+                  <TableColumn fx:id="sMKH" prefWidth="67.0" text="Mã KH" />
+                  <TableColumn fx:id="sTen" prefWidth="212.0" text="Họ Tên" />
+                  <TableColumn fx:id="sSDT" minWidth="0.0" prefWidth="151.0" text="Số ĐT" />
+                  <TableColumn fx:id="sSua" prefWidth="72.0" text="Sửa" />
+                  <TableColumn fx:id="sXoa" minWidth="0.0" prefWidth="70.0" text="Xoá" />
+               </columns>
+            </TableView>
+            <Button layoutX="14.0" layoutY="35.0" mnemonicParsing="false" onAction="#backHome" text="&lt;&lt; trở về" />
+            <Button layoutX="452.0" layoutY="35.0" mnemonicParsing="false" onAction="#addKH" text="thêm khách hàng" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
