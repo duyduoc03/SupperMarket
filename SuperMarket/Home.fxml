@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JP2.SuperMarket.HomeController">
+   <children>
+      <Text fill="HOTPINK" layoutX="227.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SuperMarket">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Button onAction="#nhanvienModule" layoutX="67.0" layoutY="115.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="107.0" text="Nhân Viên" />
+      <Button onAction="#khachhangModule" layoutX="247.0" layoutY="115.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="107.0" text="Khách Hàng" />
+      <Button onAction="#sanphamModule" layoutX="422.0" layoutY="115.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="107.0" text="Sản Phẩm" />
+      <Button onAction="#qlhdModule" layoutX="121.0" layoutY="240.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="147.0" text="Quản Lý Hoá Đơn" />
+      <Button onAction="#cthdModule" layoutX="329.0" layoutY="240.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="147.0" text="Chi Tiết Hoá Đơn" />
+   </children>
+</Pane>
