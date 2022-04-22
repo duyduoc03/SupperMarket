@@ -12,7 +12,7 @@ public class HomeController {
     }
     public void khachhangModule(ActionEvent actionEvent) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("KhachHang.fxml"));
-        Main.rootStage.setScene(new Scene(root,800,600));
+        Main.rootStage.setScene(new Scene(root,700,500));
     }
 
     public void sanphamModule(ActionEvent event) throws Exception{
@@ -20,9 +20,13 @@ public class HomeController {
         Main.rootStage.setScene(new Scene(root,800,600));
     }
 
-    public void qlhdModule(ActionEvent event) {
+    public void qlhdModule(ActionEvent event) throws Exception{
+        Parent root = FXMLLoader.load(getClass().getResource("HoaDon.fxml"));
+        Main.rootStage.setScene(new Scene(root,700,500));
     }
 
-    public void cthdModule(ActionEvent event) {
+    public void cthdModule(ActionEvent event) throws Exception{
+        Parent root = FXMLLoader.load(getClass().getResource("ChiTietHD.fxml"));
+        Main.rootStage.setScene(new Scene(root,700,500));
     }
 }

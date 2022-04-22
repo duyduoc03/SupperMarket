@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="606.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JP2.SuperMarket.ChiTietHDController">
+   <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="465.0" prefWidth="602.0">
+         <children>
+            <TableView fx:id="tbCTHD" layoutX="16.0" layoutY="125.0" prefHeight="271.0" prefWidth="571.0">
+               <columns>
+                  <TableColumn fx:id="cMHD" prefWidth="67.0" text="Mã HD" />
+                  <TableColumn fx:id="cMSP" prefWidth="63.0" text="Mã SP" />
+                  <TableColumn fx:id="cSoLuong" minWidth="0.0" prefWidth="77.0" text="Số Lượng" />
+                  <TableColumn fx:id="cGiamGia" prefWidth="111.0" text="Giảm Giá" />
+                  <TableColumn fx:id="cRHD" minWidth="0.0" prefWidth="139.0" text="Ngày Ra HD" />
+                  <TableColumn fx:id="cSua" minWidth="0.0" prefWidth="56.0" text="Sửa" />
+                  <TableColumn fx:id="cXoa" minWidth="0.0" prefWidth="57.0" text="Xoá" />
+               </columns>
+            </TableView>
+            <Button layoutX="16.0" layoutY="35.0" mnemonicParsing="false" onAction="#backHome" text="&lt;&lt; trở về" />
+            <Button layoutX="446.0" layoutY="35.0" mnemonicParsing="false" onAction="#addCTHD" text="Thêm CTHD" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

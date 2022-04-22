@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="392.0" prefWidth="605.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JP2.SuperMarket.CTHDForm">
+   <children>
+      <Text layoutX="154.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thêm Chi Tiết Hoá Đơn" wrappingWidth="233.6708984375">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="cMHD" layoutX="72.0" layoutY="101.0" prefHeight="31.0" prefWidth="199.0" promptText="Mã Hoá Đơn" />
+      <TextField fx:id="cMSP" layoutX="346.0" layoutY="101.0" prefHeight="31.0" prefWidth="199.0" promptText="Mã Sản Phẩm" />
+      <TextField fx:id="cSoLuong" layoutX="72.0" layoutY="157.0" prefHeight="31.0" prefWidth="199.0" promptText="Số Lượng" />
+      <TextField fx:id="cGiamGia" layoutX="346.0" layoutY="157.0" prefHeight="31.0" prefWidth="199.0" promptText="Giảm Giá" />
+      <TextField fx:id="cRHD" layoutX="210.0" layoutY="219.0" prefHeight="31.0" prefWidth="199.0" promptText="Ngày Hoá Đơn" />
+      <Button layoutX="72.0" layoutY="301.0" mnemonicParsing="false" onAction="#backChiTietHD" prefHeight="31.0" prefWidth="89.0" text="&lt;&lt; Trở Về" />
+      <Button layoutX="456.0" layoutY="301.0" mnemonicParsing="false" onAction="#submit" prefHeight="31.0" prefWidth="89.0" text="Submit" />
+   </children>
+</Pane>

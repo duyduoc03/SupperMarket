@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JP2.SuperMarket.HoaDonForm">
+   <children>
+      <Text layoutX="328.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a HD" wrappingWidth="181.6708984375">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="sMaHD" layoutX="58.0" layoutY="112.0" prefHeight="31.0" prefWidth="289.0" promptText="Mã Hoá Đơn" />
+      <TextField fx:id="sMaNV" layoutX="470.0" layoutY="112.0" prefHeight="31.0" prefWidth="289.0" promptText="Mã Nhân Viên" />
+      <TextField fx:id="sMaKH" layoutX="57.0" layoutY="201.0" prefHeight="31.0" prefWidth="289.0" promptText="Mã Khách Hàng" />
+      <TextField fx:id="sTongTien" layoutX="469.0" layoutY="201.0" prefHeight="31.0" prefWidth="289.0" promptText="Tổng Tiền" />
+      <Button layoutX="169.0" layoutY="300.0" mnemonicParsing="false" onAction="#backHoaDon" prefHeight="31.0" prefWidth="93.0" text="&lt;&lt;Trở Lại " />
+      <Button layoutX="581.0" layoutY="300.0" mnemonicParsing="false" onAction="#Submit" prefHeight="31.0" prefWidth="93.0" text="Thêm HD " />
+   </children>
+</Pane>

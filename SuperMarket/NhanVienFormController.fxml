@@ -9,7 +9,7 @@
    <children>
       <Text layoutX="225.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thêm Nhân Viên" wrappingWidth="169.6708984375">
          <font>
-            <Font size="21.0" />
+            <Font name="System Bold" size="21.0" />
          </font>
       </Text>
       <TextField fx:id="sHoTen" layoutX="72.0" layoutY="101.0" prefHeight="31.0" prefWidth="199.0" promptText="Họ Tên" />

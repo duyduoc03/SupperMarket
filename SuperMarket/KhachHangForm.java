@@ -15,7 +15,7 @@ public class KhachHangForm {
 
     public void backKhachHang() throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("KhachHang.fxml"));
-        Main.rootStage.setScene(new Scene(root, 800, 600));
+        Main.rootStage.setScene(new Scene(root, 700, 500));
     }
 
     public void submit(ActionEvent event) {

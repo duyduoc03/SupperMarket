@@ -40,19 +40,19 @@ public class SanPhamController implements Initializable {
         try {
 
 
-            String txt_sql1 = "select * from quanlysanpham";
+            String txt_sql = "select * from quanlysanpham";
             Connector conn = new Connector();
-            PreparedStatement stt = conn.getStatement(txt_sql1);
-            ResultSet rs1 = stt.executeQuery(txt_sql1);
+            PreparedStatement stt = conn.getStatement(txt_sql);
+            ResultSet rs = stt.executeQuery(txt_sql);
 
             ObservableList<SanPham> list = FXCollections.observableArrayList();
-            while (rs1.next()){
+            while (rs.next()){
                 SanPham p = new SanPham(
-                        rs1.getInt("masp"),
-                        rs1.getString("tensp"),
-                        rs1.getString("mota"),
-                        rs1.getInt("tonkho"),
-                        rs1.getInt("price")
+                        rs.getInt("masp"),
+                        rs.getString("tensp"),
+                        rs.getString("mota"),
+                        rs.getInt("tonkho"),
+                        rs.getInt("price")
                 );
                 list.add(p);
             }
