@@ -26,7 +26,6 @@ public class ChiTietHDController implements Initializable {
     public TableColumn<ChiTietHD, Integer> cSoLuong;
     public TableColumn<ChiTietHD, Double> cGiamGia;
     public TableColumn<ChiTietHD, Date> cRHD;
-    public TableColumn<ChiTietHD, Button> cSua;
     public TableColumn<ChiTietHD, Button> cXoa;
 
     @Override
@@ -36,7 +35,6 @@ public class ChiTietHDController implements Initializable {
         cSoLuong.setCellValueFactory(new PropertyValueFactory<>("soluong"));
         cGiamGia.setCellValueFactory(new PropertyValueFactory<>("giamgia"));
         cRHD.setCellValueFactory(new PropertyValueFactory<>("ngayhd"));
-        cSua.setCellValueFactory(new PropertyValueFactory<>("Sua"));
         cXoa.setCellValueFactory(new PropertyValueFactory<>("Xoa"));
         try {
 

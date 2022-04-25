@@ -13,10 +13,9 @@
                   <TableColumn fx:id="cMHD" prefWidth="67.0" text="Mã HD" />
                   <TableColumn fx:id="cMSP" prefWidth="63.0" text="Mã SP" />
                   <TableColumn fx:id="cSoLuong" minWidth="0.0" prefWidth="77.0" text="Số Lượng" />
-                  <TableColumn fx:id="cGiamGia" prefWidth="111.0" text="Giảm Giá" />
-                  <TableColumn fx:id="cRHD" minWidth="0.0" prefWidth="139.0" text="Ngày Ra HD" />
-                  <TableColumn fx:id="cSua" minWidth="0.0" prefWidth="56.0" text="Sửa" />
-                  <TableColumn fx:id="cXoa" minWidth="0.0" prefWidth="57.0" text="Xoá" />
+                  <TableColumn fx:id="cGiamGia" prefWidth="122.0" text="Giảm Giá" />
+                  <TableColumn fx:id="cRHD" minWidth="0.0" prefWidth="186.0" text="Ngày Ra HD" />
+                  <TableColumn fx:id="cXoa" minWidth="0.0" prefWidth="55.0" text="Xoá" />
                </columns>
             </TableView>
             <Button layoutX="16.0" layoutY="35.0" mnemonicParsing="false" onAction="#backHome" text="&lt;&lt; trở về" />

@@ -6,7 +6,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.Statement;
 
 public class CTHDForm {
     public TextField cMSP;
@@ -29,35 +32,14 @@ public class CTHDForm {
         String nrhd = this.cRHD.getText();
 
         try {
-            String sql_txt = "";
-            if (this.editData == null){
-                sql_txt = "insert into chitiethoadon (masp,mahd,soluong,giamgia,ngayhd) values(?,?,?,?,?)";
-            }
-            else {
-                sql_txt = "update chitiethoadon set masp=?,mahd=?,soluong=?,giamgia=?,ngayhd=?" +
-                        " Where mahd=" + this.editData.getMahd();
-            }
+            String sql_txt = "insert into chitiethoadon (masp,mahd,soluong,giamgia,ngayhd) " +
+                    " values('"+msp+"','"+mhd+"','"+sl+"','"+gg+"','"+nrhd+"')";
             Connector conn = new Connector();
             PreparedStatement stt = conn.getStatement(sql_txt);
-            stt.setString(1,msp);
-            stt.setString(2,mhd);
-            stt.setString(3,sl);
-            stt.setString(4,gg);
-            stt.setString(5,nrhd);
             stt.execute();
             this.backChiTietHD();
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
-    }
-
-    public void setEditData(ChiTietHD editData) {
-        this.editData = editData;
-
-        this.cMSP.setText(editData.getMasp().toString());
-        this.cMHD.setText(editData.getMahd().toString());
-        this.cSoLuong.setText(editData.getSoluong().toString());
-        this.cGiamGia.setText(editData.getGiamgia().toString());
-        this.cRHD.setText(editData.getNgayhd().toString());
     }
 }

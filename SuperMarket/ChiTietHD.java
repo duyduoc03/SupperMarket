@@ -1,8 +1,5 @@
 package JP2.SuperMarket;
 
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 
 import java.util.Date;
@@ -13,7 +10,6 @@ public class ChiTietHD{
     public Integer soluong;
     public Double giamgia;
     public Date ngayhd;
-    public Button sua;
     public Button xoa;
 
     public ChiTietHD(Integer masp, Integer mahd, Integer soluong, Double giamgia, Date ngayhd) {
@@ -22,20 +18,7 @@ public class ChiTietHD{
         this.soluong = soluong;
         this.giamgia = giamgia;
         this.ngayhd = ngayhd;
-        this.sua = new Button("Sua");
         this.xoa = new Button("Xoa");
-        this.sua.setOnAction(event -> {
-            try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("CTHDForm.fxml"));
-                Parent root = loader.load();
-                CTHDForm q = loader.getController();
-                q.setEditData(this);
-                Main.rootStage.setScene(new Scene(root,600,400));
-            }
-            catch (Exception ignored){
-
-            }
-        });
     }
 
     public Integer getMasp() {
@@ -76,14 +59,6 @@ public class ChiTietHD{
 
     public void setNgayhd(Date ngayhd) {
         this.ngayhd = ngayhd;
-    }
-
-    public Button getSua() {
-        return sua;
-    }
-
-    public void setSua(Button sua) {
-        this.sua = sua;
     }
 
     public Button getXoa() {
