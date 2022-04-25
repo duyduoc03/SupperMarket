@@ -1,9 +1,12 @@
 package JP2.SuperMarket;
 
+import JP2.library.Connector;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+
+import java.sql.PreparedStatement;
 
 public class KhachHang {
     public Integer makh ;
@@ -17,7 +20,6 @@ public class KhachHang {
         this.hoten = hoten;
         this.sodt = sodt;
         this.sua = new Button("Sua");
-        this.xoa = new Button("Xoa");
         this.sua.setOnAction(event -> {
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("KhachHangForm.fxml"));
@@ -30,6 +32,7 @@ public class KhachHang {
 
             }
         });
+        this.xoa = new Button("Xoa");
     }
 
     public Integer getMakh() {

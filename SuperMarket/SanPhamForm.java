@@ -5,13 +5,14 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 import java.sql.PreparedStatement;
 
 public class SanPhamForm {
     public TextField pTensp;
-    public TextField pMota;
+    public TextArea pMota;
     public TextField pTonkho;
     public TextField pPrice;
     private SanPham editData1;

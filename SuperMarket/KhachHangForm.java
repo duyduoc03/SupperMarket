@@ -6,7 +6,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 
+import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.Statement;
 
 public class KhachHangForm {
     public TextField sTen;
@@ -29,6 +31,14 @@ public class KhachHangForm {
             }
             else {
                 sql_txt = "update khachhang set hoten=?,sodt=?" + " Where makh=" + this.editData.getMakh();
+            }
+            String delete = "";
+            if (this.editData == null){
+                delete = "insert into khachhang (hoten,sodt) values(?,?)";
+            }
+            else {
+                delete = "DELETE FROM Registration " +
+                        "WHERE id = " +101;
             }
             Connector conn = new Connector();
             PreparedStatement stt = conn.getStatement(sql_txt);

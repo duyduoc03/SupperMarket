@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 import java.sql.PreparedStatement;
@@ -11,7 +12,7 @@ import java.sql.PreparedStatement;
 public class NhanVienFormController {
     public TextField sHoTen;
     public TextField sSDT;
-    public TextField sDiaChi;
+    public TextArea sDiaChi;
     public NhanVien editData;
 
     public void backNhanVien() throws Exception{
